@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+html{
+    min-height:100%;
+}
+body{
+    padding:0;
+    margin:0;
+    background: rgb(23,23,23);
+    background: linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(41,41,41,1) 100%);
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav p {
+    padding: 6px 6px 6px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    bottom:50px;
+    position: absolute;
+    transition: 0.3s;
+}
+.sidenav:hover p {
+    color: #f1f1f1;
+}
+.sidenav h2 {
+    padding: 6px 6px 6px 55px;
+    display: block;
+    top:50px;
+    font-size: 40px;
+    position: absolute;
+    margin-top:0;
+}
+.main {
+    margin-top:0;
+    margin-left: 200px;
+    padding-top:5%;
+    height:85%;
+}
+.title{
+    margin-left:24%;
+    top: 50px;
+    font-size: 40px;
+}
+.logo{
+    position:fixed; top:0; left:0;
+    color:white;
+}
+.links{
+    margin-left:31%;
+    margin-top:10%;
+}
+.links a{
+    background-color: #333333;
+    color: white; /* White text */
+    padding: 20px 24px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    width: 50%;
+    display: block;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: center;
+}
+.links a:hover{
+    box-shadow: inset 0px 0px 15px #80FF72;
+}
