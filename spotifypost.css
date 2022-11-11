@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+body{
+    padding:0;
+    margin:0;
+    background: rgb(23,23,23);
+    background: linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(41,41,41,1) 100%);
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav p {
+    padding: 6px 6px 6px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    bottom:50px;
+    position: absolute;
+    transition: 0.3s;
+}
+.sidenav:hover p {
+    color: #f1f1f1;
+}
+.sidenav h2 {
+    padding: 6px 6px 6px 55px;
+    display: block;
+    top:50px;
+    font-size: 40px;
+    position: absolute;
+    margin-top:0;
+}
+.main {
+    margin-top:0;
+    margin-left: 200px;
+    padding-top:5%;
+    height:85%;
+}
+.title{
+    margin-left:44%;
+    top: 50px;
+}
+.logo{
+    position:fixed; top:0; left:0;
+    color:white;
+}
+input {
+    width: 100%;
+    background-color: #212121;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+}
+input:hover {
+    background-color: #2b2b2b;
+}
+input::placeholder{
+    color:white
+}
+select {
+    width: 100%;
+    background-color: #212121;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+}
+.form{
+    max-width: 600px;
+    border-radius: 5px;
+    background-color: #333333;
+    padding: 20px;
+    height: 50%;
+    margin-left:31%;
+    position: relative;
+    margin-top:50px;
+}
+.button {
+    display: inline-block;
+    position: absolute;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    left:40%;
+    top:70%;
+    background: #333333;
+    line-height: 30px;
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 25px;
+    box-shadow: #80FF72 -2px -2px 0px 2px, #7EE8FA 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transition: all 0.2s;
+}
+.button:hover{
+    box-shadow: #7EE8FA -2px -2px 0px 2px, #80FF72 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transform: scale(1.02);
+}

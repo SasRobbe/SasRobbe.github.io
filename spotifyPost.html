@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Project - ApiDev Shuffler</title>
+    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="spotifypost.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+</head>
+<body>
+    <div class="sidenav">
+        <h2 class="logo">Post</h2>
+        <p>Project - APIDev by Robbe Sas</p>
+    </div>
+    <div class="main">
+        <div class="title"><h1>Add a new song</h1></div>
+        <div class="form" x-data="{
+            responsedata: null,
+            postsongName: null,
+            postartist: null,
+            postplaylist: null,
+            async callmethod1() {
+                this.responsedata = await (await fetch('https://projectapidev-sasrobbe.cloud.okteto.net/spotify',
+                {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        songName: this.postsongName,
+                        artist: this.postartist,
+                        playlist: this.postplaylist,
+                    }),
+                    headers: {
+                        'Content-type': 'application/json; charset=UTF-8',
+                    },
+                })).json();
+                console.log(this.responsedata);
+            },
+        }">
+            <input type="text" placeholder="song name" x-model="postsongName">
+            <br><br>
+            <input type="text" placeholder="artist" x-model="postartist">
+            <br><br>
+            <select x-model="postplaylist">
+                <option >--Chose a playlist--</option>
+                <option>Bus Vibes</option>
+                <option>Buttered ears</option>
+                <option>Ye arc</option>
+            </select>
+            <br><br>
+            <button x-on:click="callmethod1" onclick="setTimeout('history.go(0);',500);" value="Refresh" class="button">Add song</button>
+        </div>
+    </div>
+</body>
+</html>

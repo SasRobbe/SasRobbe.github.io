@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+body{
+    padding:0;
+    margin:0;
+    background: rgb(23,23,23);
+    background: linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(41,41,41,1) 100%);
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav p {
+    padding: 6px 6px 6px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    bottom:50px;
+    position: absolute;
+    transition: 0.3s;
+}
+.sidenav:hover p {
+    color: #f1f1f1;
+}
+.sidenav h2 {
+    padding: 6px 6px 6px 40px;
+    display: block;
+    top:50px;
+    font-size: 40px;
+    position: absolute;
+    margin-top:0;
+}
+.main {
+    margin-top:0;
+    margin-left: 200px;
+    padding-top:5%;
+    height:85%;
+}
+.shuffle{
+    margin-left:34%;
+    width: 30%;
+    border-radius: 20px;
+    background-color: #333333;
+    font-size: 32px;
+    height: 50%;
+    text-align: center;
+    padding-top: 6%;
+    transition: 0.3s;
+    margin-top: 60px;
+
+}
+.shuffle:hover{
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 25px #80FF72;
+}
+.title{
+    margin-left:38%;
+    top: 50px;
+}
+.logo{
+    position:fixed; top:0; left:0;
+    color:white;
+}
+
+.button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    background: #333333;
+    line-height: 30px;
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 25px;
+    box-shadow: #80FF72 -2px -2px 0px 2px, #7EE8FA 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transition: all 0.2s;
+}
+.button:hover{
+    box-shadow: #7EE8FA -2px -2px 0px 2px, #80FF72 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transform: scale(1.02);
+}

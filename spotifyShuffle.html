@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Project - ApiDev Shuffler</title>
+    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="spotifyshuffle.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+</head>
+<body>
+    <div class="sidenav">
+        <h2 class="logo">Shuffler</h2>
+        <p>Project - APIDev by Robbe Sas</p>
+    </div>
+    <div class="main">
+        <div class="title"><h1>Random Song from my playlists</h1></div>
+        <div class="shuffle" x-data="{
+            responsedata: null,
+            async getData() {
+                this.responsedata = await (await fetch('https://projectapidev-sasrobbe.cloud.okteto.net/spotify')).json();
+            }
+        }" x-init="getData">
+            <p>Song: <strong x-text="responsedata.songName">Placeholder Song</strong></p>
+            <p>Artist: <strong x-text="responsedata.artist">Placeholder Artist</strong></p>
+            <p>From playlist: <strong x-text="responsedata.playlist">Placeholder Playlist</strong></p>
+            <br>
+            <button class="button" x-on:click="getData" >Shuffle</button>
+        </div>
+    </div>
+</body>
+</html>

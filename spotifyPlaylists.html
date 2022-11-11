@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Project - ApiDev Playlists</title>
+    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="spotifyplaylist.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+</head>
+<body
+    x-data="{playlists: []}"
+    x-init="fetch('https://projectapidev-sasrobbe.cloud.okteto.net/playlists?playlist=Bus%20Vibes')
+    .then(response => response.json())
+    .then(response => { playlists = response.playlists; console.log(response.playlists); })"
+>
+    <div class="sidenav">
+        <h2 class="logo">Playlists</h2>
+        <p>Project - APIDev by Robbe Sas</p>
+    </div>
+    <div class="main">
+        <div class="title"><h1>Playlist:</h1></div>
+            <ul class="playlist">
+                <template x-for="(playlist, index) in playlists" :key="index">
+                    <li x-text="playlist.songName + ' by ' + playlist.artist"></li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
