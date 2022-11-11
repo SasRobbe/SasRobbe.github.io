@@ -18,7 +18,7 @@
     * [front-end repo](https://github.com/SasRobbe/SasRobbe.github.io)
   * #### link hosted front-end GitHub
     * [index page](https://sasrobbe.github.io/)
-    * [shuffle page](https://sasrobbe.github.io/spotify)
+    * [shuffle page](https://sasrobbe.github.io/spotifyShuffle)
     * [playlist page](https://sasrobbe.github.io/spotifyPlaylists)
     * [post page](https://sasrobbe.github.io/spotifyPost)
 
