@@ -21,8 +21,9 @@
             <p>Song: <strong x-text="responsedata.songName">Placeholder Song</strong></p>
             <p>Artist: <strong x-text="responsedata.artist">Placeholder Artist</strong></p>
             <p>From playlist: <strong x-text="responsedata.playlist">Placeholder Playlist</strong></p>
-            <br>
-            <button class="button" x-on:click="getData" >Shuffle</button>
+            <div class="buttondiv">
+                <button class="button" x-on:click="getData" >Shuffle</button>
+            </div>
         </div>
     </div>
 </body>

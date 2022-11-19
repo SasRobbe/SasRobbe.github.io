@@ -3,7 +3,7 @@ body{
     padding:0;
     margin:0;
     background: rgb(23,23,23);
-    background: linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(41,41,41,1) 100%);
+    background: linear-gradient(#323233, #0F0F0F);
     color: white;
     font-family: 'Abel', sans-serif;
 }
@@ -46,6 +46,8 @@ body{
     height:85%;
 }
 .shuffle{
+    position: relative;
+    margin: 0 auto;
     margin-left:34%;
     width: 30%;
     border-radius: 20px;
@@ -56,6 +58,7 @@ body{
     padding-top: 6%;
     transition: 0.3s;
     margin-top: 60px;
+    display: inline-block;
 
 }
 .shuffle:hover{
@@ -63,8 +66,10 @@ body{
     box-shadow: inset 0px 0px 25px #80FF72;
 }
 .title{
-    margin-left:38%;
+    margin-left:22%;
     top: 50px;
+    max-width: 55%;
+    text-align: center;
 }
 .logo{
     position:fixed; top:0; left:0;

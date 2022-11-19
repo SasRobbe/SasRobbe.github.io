@@ -6,7 +6,7 @@ body{
     padding:0;
     margin:0;
     background: rgb(23,23,23);
-    background: linear-gradient(0deg, rgba(23,23,23,1) 0%, rgba(41,41,41,1) 100%);
+    background: linear-gradient(#323233, #121212);
     color: white;
     font-family: 'Abel', sans-serif;
 }
@@ -49,17 +49,20 @@ body{
     height:85%;
 }
 .title{
-    margin-left:24%;
+    margin-left:23%;
     top: 50px;
-    font-size: 40px;
+    font-size: 30px;
+    max-width: 55%;
+    text-align: center;
 }
 .logo{
     position:fixed; top:0; left:0;
     color:white;
 }
 .links{
-    margin-left:31%;
+    margin-left:38%;
     margin-top:5%;
+    max-height: 600px;
 }
 .links a{
     background-color: #333333;
@@ -67,7 +70,7 @@ body{
     padding: 20px 24px;
     margin-bottom: 80px;
     cursor: pointer;
-    width: 50%;
+    width: 35%;
     display: block;
     border-radius: 10px;
     text-decoration: none;
