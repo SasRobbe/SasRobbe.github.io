@@ -6,7 +6,7 @@ body{
     padding:0;
     margin:0;
     background: rgb(23,23,23);
-    background: linear-gradient(#323233, #121212);
+    background: linear-gradient(#323233, #0F0F0F);
     color: white;
     font-family: 'Abel', sans-serif;
 }
