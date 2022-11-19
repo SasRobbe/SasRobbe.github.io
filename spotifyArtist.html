@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Project - ApiDev Playlists</title>
+    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="spotifyartist.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+</head>
+<body
+    x-data="{artists: []}"
+    x-init="fetch('https://projectapidev-sasrobbe.cloud.okteto.net/artist/Joji')
+    .then(response => response.json())
+    .then(response => { playlists = response.playlists; console.log(response.playlists); })"
+>
+    <div class="sidenav">
+        <h2 class="logo">Artist</h2>
+        <p>Project - APIDev by Robbe Sas</p>
+    </div>
+    <div class="main">
+        <div class="title"><h1>Songs by Joji:</h1></div>
+            <ul class="playlist">
+                <template x-for="(artists, index) in artists" :key="index">
+                    <li x-text="artist.songName"></li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
