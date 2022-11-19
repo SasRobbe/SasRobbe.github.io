@@ -9,7 +9,7 @@
     x-data="{artists: []}"
     x-init="fetch('https://projectapidev-sasrobbe.cloud.okteto.net/artist/Joji')
     .then(response => response.json())
-    .then(response => { playlists = response.playlists; console.log(response.playlists); })"
+    .then(response => { artists = response.artists; console.log(response.artists); })"
 >
     <div class="sidenav">
         <h2 class="logo">Artist</h2>
@@ -18,7 +18,7 @@
     <div class="main">
         <div class="title"><h1>Songs by Joji:</h1></div>
             <ul class="playlist">
-                <template x-for="(artists, index) in artists" :key="index">
+                <template x-for="(artist, index) in artists" :key="index">
                     <li x-text="artist.songName"></li>
                 </template>
             </ul>
